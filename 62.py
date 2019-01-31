@@ -1,0 +1,10 @@
+li=list(map(int,input().split()))
+a=max(li)
+b=min(li)
+m=li.index(a)
+n=li.index(b)
+li[m]=li[0]
+li[0]=a
+li[n]=li[-1]
+li[-1]=b
+print(li)
